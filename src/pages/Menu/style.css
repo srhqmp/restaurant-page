@@ -19,6 +19,7 @@
   text-align: center;
   box-sizing: border-box;
   position: relative;
+  cursor: pointer;
 }
 
 .menu .item:hover {

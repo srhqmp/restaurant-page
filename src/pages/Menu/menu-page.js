@@ -1,25 +1,6 @@
 import menu from "./menu.js";
+import { generateElement } from "../../helpers.js";
 import "./style.css";
-
-const generateElement = ({ type, textContent, className, id, src, alt }) => {
-  let attributes = { type };
-  if (textContent) {
-    attributes.textContent = textContent;
-  }
-  if (className) {
-    attributes.className = className;
-  }
-  if (id) {
-    attributes.id = id;
-  }
-  if (type === "img") {
-    attributes.src = src;
-    attributes.alt = alt || "";
-  }
-
-  const element = Object.assign(document.createElement(type), attributes);
-  return element;
-};
 
 const generateItem = ({ name, image, category }) => {
   const item = generateElement({ type: "div", className: "item" });

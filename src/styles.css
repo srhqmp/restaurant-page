@@ -25,6 +25,10 @@ body {
   background-size: cover;
 }
 
+#content h2 {
+  font-family: "Berkshire Swash", serif;
+}
+
 .container {
   margin: auto;
   max-width: 1200px;
@@ -66,6 +70,7 @@ nav button {
   font-size: 22px;
   color: var(--secondary-color);
   font-family: "Lora", serif;
+  cursor: pointer;
 }
 
 nav button:hover {
@@ -116,6 +121,7 @@ nav button:hover {
   border-radius: 6px;
   font-family: "Lora", serif;
   font-weight: 600;
+  border: 1px solid var(--secondary-color);
 }
 
 .cta-button:hover {
@@ -140,63 +146,11 @@ nav button:hover {
   margin: 0;
 }
 
-.about-us-teaser {
-  display: flex;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  /* height: 700px; */
-  font-size: 18px;
-  text-align: center;
-}
-
-.about-us-teaser div {
-  max-width: 1000px;
-  padding: 32px;
-  color: var(--secondary-color);
-}
-
 h2 {
   font-size: 48px;
   padding: 0;
   color: var(--secondary-color);
   text-align: center;
-}
-
-.menu-teaser {
-  background-color: var(--black);
-  height: 500px;
-  padding: 0px 12px;
-  padding-bottom: 32px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-}
-
-.menu-teaser .menu {
-  display: flex;
-  gap: 32px;
-}
-
-.menu-teaser .item {
-  background-color: var(--primary-color);
-  border-radius: 12px;
-  border: 1px solid var(--secondary-color);
-  width: 300px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
-    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-  color: var(--secondary-color);
-}
-
-.menu-teaser .item:hover {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  border: 1px solid var(--accent-color);
 }
 
 footer {
@@ -212,6 +166,7 @@ footer {
 
 footer .logo {
   box-sizing: border-box;
+  font-family: "Berkshire Swash", serif;
 }
 
 footer .logo h2 {
@@ -232,6 +187,7 @@ footer .navigation {
 footer a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 footer .links {
@@ -244,7 +200,7 @@ footer .links img {
 }
 
 footer a:hover {
-  color: var(--primary-color);
+  color: var(--white);
 }
 
 .copyright {
