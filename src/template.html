@@ -3,18 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurant Page</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <title>Celestial Delights</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="container">
+        <div class="logo">
+          <img src="images/logo.png" alt="Celestial Delights Logo" width="65" />
+          <h1>Celestial Delights</h1>
+        </div>
         <ul>
-          <li><button>Home</button></li>
-          <li><button>Menu</button></li>
-          <li><button>About</button></li>
+          <li><button id="home-button">Home</button></li>
+          <li><button id="menu-button">Menu</button></li>
+          <li><button id="about-button">About</button></li>
         </ul>
       </nav>
     </header>
-    <div id="content"></div>
+    <div id="content">
+      <div id="home-page"></div>
+    </div>
   </body>
 </html>
