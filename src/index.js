@@ -2,7 +2,7 @@ import "./styles.css";
 import displayHomePage from "./pages/Home/home-page.js";
 import displayMenuPage from "./pages/Menu/menu-page.js";
 
-displayHomePage();
+displayMenuPage();
 
 const navMenu = document.querySelectorAll(".nav-menu");
 navMenu.forEach((item) =>
@@ -19,7 +19,7 @@ navMenu.forEach((item) =>
         displayHomePage();
         break;
       default:
-        displayHomePage();
+        displayMenuPage();
         break;
     }
   })

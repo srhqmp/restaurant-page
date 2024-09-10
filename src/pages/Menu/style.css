@@ -1,0 +1,55 @@
+.menu {
+  margin: 72px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  align-items: center;
+  justify-content: center;
+  grid-auto-flow: row;
+  gap: 48px;
+  box-sizing: border-box;
+}
+
+.menu .item {
+  background-color: var(--primary-color);
+  border-radius: 12px;
+  border: 1px solid var(--secondary-color);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  color: var(--secondary-color);
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.menu .item:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--accent-color);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.item .badge {
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 2px 8px;
+  border-radius: 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  position: absolute;
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.item .badge.main {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+}
+.item .badge.dessert {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.item .badge.drink {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
